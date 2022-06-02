@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>NOXIES</title>
+</head>
+<body>
+    <div class="social">
+        <!-- COMEÇO DA NAVBAR -->
+        <nav class="social-nav">
+            <!-- TÍTULO DA PLATAFORMA -->
+            <div class="title">
+                <h3>NOXIES</h3>
+            </div>
+            <!-- FIM DO TÍTULO -->
+            
+            <!-- COMEÇO DO INPUT -->
+            <div class="search-bar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Pesquisar no NOXIES" class="search-input">
+            </div>
+            <!-- FIM DO INPUT -->
+
+            <!-- COMEÇO DA BARRA DE USUÁRIO -->
+            <div class="user-nav">
+                <div class="user-img-wrapper">
+                    <img src="people/girl.jpg" alt="Foto do perfil de Andressa Lima">
+                </div>
+                <a href="#" class="user-name">Andressa</a>
+                <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <!-- FIM DA BARRA DE USUÁRIO -->
+        </nav>
+        <!-- FIM DA NAVBAR -->
+
+        <!-- COMEÇO DO CONTEÚDO PRINCIPAL -->
+        <main class="content">
+            <!-- COMEÇO DO MENU LATERAL -->
+            <section class="sidebar">
+                <ul class="side-nav">
+                    <li class="sidebar-item active">
+                        <a href="index.html">
+                            <i class="fa-solid fa-house"></i>
+                            <span class>Home</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item" onclick="openModal()">
+                        <a href="#">
+                            <i class="fa-solid fa-list"></i>
+                            <span>Sobre</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="https://www.figma.com/file/lHAy78ssZWviKSidMQbx7t/Noxies" target="_blank">
+                            <i class="fa-brands fa-figma"></i>
+                            <span class="figma">Figma</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item theme">
+                        <a href="#">
+                            <i class="fa-solid fa-moon"></i>
+                            <span>Mudar Tema</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="copyright">
+                    &copy;Noxies 2022 por Willian Cavalcante.
+                </div>
+            </section>
+            <!-- FIM DO MENU LATERAL -->
+
+            <!-- COMEÇO DO MODAL DA OPÇÃO SOBRE -->
+                <div class="sobre-container">
+                    <div class="modal">
+                        <div class="project-close">
+                        <h2>Sobre o Projeto</h2>
+                        <button class="btn-close" onclick="closeModal()">Fechar</button> 
+                    </div>
+                        <p>O nome Noxies é um trocadilho com os nomes "Nox" e "Dies", que significam noite e dia no Latim. É uma referência as cores 
+                            utilizadas no projeto e a função de mudar o tema. Foi utilizado a fonte 'Aldrich' para o logo e a fonte 'Open Sans' para os nomes de usuários e textos. 
+                            O design do projeto foi desenvolvido por mim utilizando o Figma e você pode acessá-lo clicando na opção "Figma" no menu.  </p>
+                        <p>O projeto utiliza a API Random User Generator para gerar os usuários da aba amigos. A API é de livre uso, assim como todas as fotos geradas. Um
+                            agradecimento aos criadores Arron Hunt e Keith Armstrong.</p>
+                            <p>As imagens de perfil e das publicações tem livre uso comercial e para projetos pessoais, assim como os ícones utilizados.</p>
+                            <!-- BOTÃO CHAMANDO FUNÇÃO PARA FECHAR O MODAL -->
+                    </div>
+                </div>
+            <!-- FIM DO MODAL DA OPÇÃO SOBRE -->
+
+
+            <!-- COMEÇO DOS POSTS -->
+            <section class="feed">
+                <!-- COMEÇO DA ÁREA PARA CRIAR PUBLICAÇÃO -->
+                <div class="header-post">
+                    <div class="header-img-wrapper">
+                        <img src="people/girl.jpg" alt="Foto do perfil de Andressa Lima">
+                    </div>
+                    <input type="text" placeholder="O que você está pensando?">
+                    <i class="fa-solid fa-image"></i>
+                    <i class="fa-solid fa-camera"></i>
+                </div>
+                <!-- FIM DA ÁREA PARA CRIAR PUBLICAÇÃO -->
+
+                <!-- COMEÇO DO POST 1 -->
+                <div class="posts">
+                    <div class="post">
+                        <div class="user">
+                            <div class="user-avatar">
+                                <img src="people/girl-post2.jpg" alt="Foto do perfil de Jessica Castro">
+                            </div>
+                                <div class="post-user-info">
+                                    <h4>Jessica Castro</h4>
+                                    <p>15m</p>
+                                </div>
+                        </div>
+                            <p class="post-text">O Museu do Índio, lançará, entre 16 e 20 de maio, uma programação especial para a exposição permanente “Infinity of Nations”. A exposição é 
+                                composta de uma pequena amostra dos milhões de objetos que o opulento nova-iorquino George Gustav Heye (1874-1957) 
+                                colecionou durante suas viagens pelas Américas do Norte, do Sul e Central.
+                            </p>
+                            <div class="post-img">
+                                <img src="img/post-1.jpg" alt="Foto de um nativo americano">
+                            </div>
+                            <div class="post-icon">
+                                <i class="fa-solid fa-heart"></i>
+                                <i class="fa-solid fa-message"></i>
+                                <i class="fa-solid fa-share-nodes"></i>
+                            </div>
+                    </div>
+                    <!-- FIM DO POST 1 -->
+
+                    <!-- COMEÇO DO POST 2 -->
+                    <div class="post">
+                        <div class="user">
+                            <div class="user-avatar">
+                                <img src="people/girl-post.jpg" alt="Foto do perfil de Danielle Rodrigues">
+                            </div>
+                                <div class="post-user-info">
+                                    <h4>Danielle Rodrigues</h4>
+                                    <p>22m</p>
+                                </div>
+                        </div>
+                            <p class="post-text">A preservação do meio ambiente começa com pequenas atitudes diárias,
+                                que fazem toda a diferença. Reciclagem do lixo, economia da água, preservação das florestas, respeitar a fauna, não jogar lixo nos rios,ruas e terrenos baldios.
+                                <span>#DiaMundialDoMeioAmbiente</span>
+                            </p>
+                            <div class="post-img">
+                                <img src="img/post-3.jpg" alt="Foto de Rosas do Japão">
+                            </div>
+                            <div class="post-icon">
+                                <i class="fa-solid fa-heart"></i>
+                                <i class="fa-solid fa-message"></i>
+                                <i class="fa-solid fa-share-nodes"></i>
+                            </div> 
+                    </div>
+                    <!-- FIM DO POST 2 -->
+
+                    <!-- COMEÇO DO POST 3 -->
+                    <div class="post">
+                        <div class="user">
+                            <div class="user-avatar">
+                                <img src="people/guy-post.jpg" alt="Foto do perfil de Anderson Carvalho">
+                            </div>
+                                <div class="post-user-info">
+                                    <h4>Anderson Carvalho</h4>
+                                    <p>43m</p>
+                                </div>
+                        </div>
+                            <p class="post-text">Agradeço a Deus por mais um dia de trabalho🙏🙏🙏</p>
+                            <div class="post-img">
+                                <img src="img/post-2.jpg" alt="Um construtor trabalhando">
+                            </div>
+                            <div class="post-icon">
+                                <i class="fa-solid fa-heart"></i>
+                                <i class="fa-solid fa-message"></i>
+                                <i class="fa-solid fa-share-nodes"></i>
+                            </div>
+                    </div>
+                    
+                    <!-- FIM DO POST 3 -->
+                </div>
+            </section>
+            <!-- FIM DOS POSTS -->
+
+            <!-- COMEÇO DA ABA AMIGOS -->
+            <section class="friends-bar">
+                <header class="friends-header">
+                    <h4 class="friends-title">Amigos</h4>
+                    <input type="text" id="filter" placeholder="Pesquisar no NOXIES">
+                </header>
+                <ul id="result" class="user-list">
+                </ul>
+            </section>
+            <!-- FIM DA ABA AMIGOS -->
+        </main>
+            <!-- SIDEBAR PARA CELULAR -->
+            <section class="phone-bar">
+                <ul class="phone-nav">
+                    <li class="phone-item active">
+                        <a href="index.html">
+                            <i class="fa-solid fa-house"></i>
+                        </a>
+                    </li>
+                    <li class="phone-item" onclick="openModal()">
+                        <a href="#">
+                            <i class="fa-solid fa-list"></i>
+                        </a>
+                    </li>
+                    <li class="phone-item">
+                        <a href="https://www.figma.com/file/lHAy78ssZWviKSidMQbx7t/Noxies" target="_blank">
+                            <i class="fa-brands fa-figma"></i>
+                        </a>
+                    </li>
+                    <li class="phone-item black">
+                        <a href="#">
+                            <i class="fa-solid fa-moon"></i>
+                        </a>
+                    </li>
+                </ul>
+            <!-- FIM DO SIDEBAR PARA CELULAR -->
+        <!-- FIM DO CONTEÚDO PRINCIPAL -->
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
